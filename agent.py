@@ -18,7 +18,7 @@ Transition = namedtuple('Transition',
                         ('state', 'action', 'next_state', 'reward'))
 
 # Get the enviroment
-env = CubeEnv(dim=2, shuffle_steps=3)
+env = CubeEnv(dim=3, shuffle_steps=3)
 
 
 # To store past events
@@ -123,4 +123,3 @@ def optimize_model():
     
     torch.nn.utils.clip_grad_value_(policy_net.parameters(), 100)
     optimizer.step()
-    

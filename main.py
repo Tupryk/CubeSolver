@@ -6,7 +6,7 @@ import torch
 
 from agent import env, select_action, optimize_model, policy_net, target_net, episode_durations, TAU, device, memory
 
-num_episodes = 5000
+num_episodes = 50000
 total_rewards = []
 for i_episode in range(num_episodes):
     
