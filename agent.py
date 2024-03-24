@@ -18,7 +18,7 @@ Transition = namedtuple('Transition',
                         ('state', 'action', 'next_state', 'reward'))
 
 # Get the enviroment
-env = CubeEnv(dim=3, shuffle_steps=3)
+env = CubeEnv(dim=3, shuffle_steps=2)
 
 
 # To store past events
